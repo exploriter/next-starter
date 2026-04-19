@@ -1,7 +1,7 @@
 ## Next.js Starter
 
 ```zsh
-npx create-next-app --example https://github.com/gigawatson/next-starter .
+pnpm create-next-app --example https://github.com/gigawatson/next-starter .
 ```
 
 ### Includes
