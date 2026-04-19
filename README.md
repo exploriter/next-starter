@@ -8,17 +8,17 @@ npx create-next-app --example https://github.com/gigawatson/next-starter .
 
 - TypeScript
 - Prisma
-- Tailwind CSS w/ Prettier Plugin
+- Better Auth
 - Zod
-- next-safe-action w/ React Hook Form adapter
-- React Hook Form w/ Zod adapter
+- Tailwind CSS
+- shadcn/ui w/ Base UI
 - ESLint
 - Prettier
 
 Initialize Prisma:
 
 ```zsh
-npx prisma init
+pnpm prisma init
 ```
 
 Set the `DATABASE_URL` in `.env`:
@@ -30,17 +30,17 @@ DATABASE_URL="postgresql://{username}@localhost:5432/{database_name}"
 Populate `schema.prisma` with models and then generate the schema:
 
 ```zsh
-npx prisma generate
+pnpm db:generate
 ```
 
 Push the changes to the database:
 
 ```zsh
-npx prisma db push
+pnpm db:push
 ```
 
 Database UI:
 
 ```zsh
-npx prisma studio
+pnpm prisma studio
 ```
